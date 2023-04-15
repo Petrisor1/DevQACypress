@@ -22,8 +22,9 @@ describe('TC8 Verify that the user is able to use “Vizualizeaza” functionali
         cy.get('a[href="/dashboard/recommended_needs"]').click({multiple:true,force:true});
 
         //Waith until all needs are displayed in table
-        cy.wait(1000);
-        cy.get('i.fas.fa-eye.view.text-info.action-icon').click();
+        cy.wait(2000);
+      
+        cy.get('tbody > tr:nth-child(1) > td:nth-child(6) > div > i.fas.fa-eye.view.text-info.action-icon').click();
        
 
         // Split error is printed so this code is stoping the test to fail

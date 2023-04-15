@@ -23,9 +23,8 @@ describe('TC9 Verify that the user is able to use “Sterge” functionality',()
         cy.get('a[href="/dashboard/recommended_needs"]').click({multiple:true,force:true});
 
         //Waith until all needs are displayed in table
-        cy.wait(1000);
+        cy.wait(2000);
         
-
         //Getting the initial number of rows
         cy.get('table >tbody > tr').its('length').then((initialLength)=>{
             nrRows=initialLength;
@@ -41,7 +40,7 @@ describe('TC9 Verify that the user is able to use “Sterge” functionality',()
         //Confirm delete
         cy.get('button.btn.btn-primary.btn-secondary.btn-sm').click();
         
-
+        cy.wait(2000);
         //Check if the number of rows decreased 
         cy.get('table > tbody > tr').should((lis)=>{
            

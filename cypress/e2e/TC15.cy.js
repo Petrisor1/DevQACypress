@@ -6,7 +6,7 @@ const headers=
      "accept": "application/json" ,
      "accept-language": "en-US,en;q=0.7" ,
      "access-control-allow-origin": "*" ,
-     "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODE1MTI3NzgsInN1YiI6MTV9.qAyOxdY-mVixagMiK3bqDLQA-W0Q16xII4h8JaRkeDs" ,
+     "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODE2NjM4NjEsInN1YiI6MTV9.8y72slKLkw4CuNm5kea84e9xOQXQ7LELwjM3sopyfis" ,
      "cache-control": "no-cache" ,
      "pragma": "no-cache" ,
      "referer": "https://iwanttohelp.bim.assistcloud.services/dashboard/profile" ,

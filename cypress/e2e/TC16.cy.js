@@ -27,7 +27,6 @@ describe('TC16 Test Get all recommended needs endpoint:',()=>{
             url: 'https://iwanttohelp.bim.assistcloud.services/volunteers/api/v1/charts/user_recomended_needs',
             headers:headers,
             failOnStatusCode: false,
-            form: true, // indicates the body should be form urlencoded and sets Content-Type: application/x-www-form-urlencoded headers
           }).then((response)=>{
             expect(response.status).to.eq(200);
           })

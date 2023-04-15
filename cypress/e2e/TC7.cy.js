@@ -24,7 +24,7 @@ describe('TC7 Verify that the Descriere field is required',()=>{
         cy.get('a[href="/dashboard/recommended_needs"]').click({multiple:true,force:true});
         
        //waith untill all needs are displayed in table
-        cy.wait(1000);
+        cy.wait(2000);
         cy.get('table >tbody > tr').its('length').then((initialLength)=>{
     
             nrRows=initialLength;
@@ -53,7 +53,7 @@ describe('TC7 Verify that the Descriere field is required',()=>{
             cy.get('span[class="text-left text-danger"]').should('have.text',' Acest camp este obligatoriu. ');
 
             cy.get('a[href="/dashboard/recommended_needs"]').click({multiple:true,force:true});
-
+            
             cy.get('table > tbody > tr').should((lis)=>{
                 expect(lis).to.have.length(nrRows);
             });
