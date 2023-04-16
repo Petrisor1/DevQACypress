@@ -8,5 +8,8 @@
   "apartament":"Apartamentul de teste",
   "country":"Suceava",
   "city":"Suceava",
-  "postal":"727030"
+  "postal":"727030",
+  "URL":"https://iwanttohelp.bim.assistcloud.services/",
+  "email":"vasile.cirdei@student.usv.ro",
+  "mesaj":"Test message"
 }
